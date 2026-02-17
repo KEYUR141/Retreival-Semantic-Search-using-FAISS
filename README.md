@@ -1,4 +1,4 @@
-<img width="728" height="1056" alt="image" src="https://github.com/user-attachments/assets/b6520d49-92cd-4f2d-b19d-d83744131ca7" /># 🔍 Retrieval Semantic Search using FAISS
+# 🔍 Retrieval Semantic Search using FAISS
 
 A high-performance semantic search implementation using **FAISS** (Facebook AI Similarity Search) and **Sentence Transformers** to enable efficient similarity-based text retrieval.
 
@@ -91,7 +91,7 @@ FAISS calculates similarity using distance metrics. **Lower distance = Higher si
 ## 📺 About the Dataset
 
 <div align="center">
-  <img src="[assets/succession-poster.jpg](https://imgs.search.brave.com/zrI4QlwI-BaS4E5hhcEnIyXUAKq4NLSrumHfl_dQxCk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wb3N0/ZXJ3YS5jb20vY2Ru/L3Nob3AvZmlsZXMv/U1VDQ0VTU0lPTjJf/ZjVkZDEyNjctMjcx/Ny00ZWZlLTk0NWIt/ODg4YWY0YjNlMjU1/LmpwZz92PTE3MTQ1/NDM0NjEmd2lkdGg9/MTQ0NQ)" alt="Succession TV Show" width="600"/>
+  <img src="https://github.com/user-attachments/assets/b6520d49-92cd-4f2d-b19d-d83744131ca7" alt="Succession TV Show" width="600"/>
   <p><em>Demo dataset based on HBO's Succession TV series</em></p>
 </div>
 
