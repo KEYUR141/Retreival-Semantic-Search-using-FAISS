@@ -90,7 +90,7 @@ FAISS calculates similarity using distance metrics. **Lower distance = Higher si
 ## 📺 About the Dataset
 
 <div align="center">
-  <img src="https://imgs.search.brave.com/Cu4cw3gBAqKT5osifroZBNEwUxYdkHbxO_Kxv4wiKjI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9udHZi/LnRtc2ltZy5jb20v/YXNzZXRzL3AxNTA1/MjkwMF9iX2g4X2Fs/LmpwZz93PTk2MCZo/PTU0MA" alt="Succession TV Show Cast" width="100%" style="max-width: 900px; border-radius: 8px;"/>
+  <img src="Succession_image.jpg" alt="Succession TV Show Cast" width="100%" style="max-width: 900px; border-radius: 8px;"/>
   <p><em>Demo dataset based on HBO's Succession TV series</em></p>
 </div>
 
