@@ -1,12 +1,13 @@
-# Retreival-Semantic-Search-using-FAISS
-
-# 🔍 Retrieval Semantic Search using FAISS
+<img width="728" height="1056" alt="image" src="https://github.com/user-attachments/assets/b6520d49-92cd-4f2d-b19d-d83744131ca7" /># 🔍 Retrieval Semantic Search using FAISS
 
 A high-performance semantic search implementation using **FAISS** (Facebook AI Similarity Search) and **Sentence Transformers** to enable efficient similarity-based text retrieval.
+
 
 ## 📖 Overview
 
 This project demonstrates how to build a semantic search system that can find the most relevant text passages based on the meaning of a query, rather than simple keyword matching. It uses dense vector embeddings and approximate nearest neighbor search to achieve fast and accurate results.
+
+**Dataset**: This implementation uses text data from the critically acclaimed HBO series **Succession** as a demonstration corpus, showcasing how semantic search can retrieve relevant information about the show's plot, characters, and production details.
 
 ## ✨ Features
 
@@ -14,6 +15,7 @@ This project demonstrates how to build a semantic search system that can find th
 - **Efficient Search**: Leverages FAISS IndexFlatL2 for fast similarity search
 - **Top-K Retrieval**: Returns the most relevant results with distance scores
 - **Persistent Storage**: Pre-computed embeddings stored for quick access
+- **Demo Dataset**: Includes real-world text data about HBO's Succession TV series
 
 ## 🛠️ Technologies Used
 
@@ -86,6 +88,37 @@ FAISS calculates similarity using distance metrics. **Lower distance = Higher si
 | **IndexHNSW** | Fast retrieval needed | Very Fast | ~98% | High |
 | **IndexIVFPQ** | Large datasets (>10M) | Very Fast | ~90% | Low |
 
+## 📺 About the Dataset
+
+<div align="center">
+  <img src="[assets/succession-poster.jpg](https://imgs.search.brave.com/zrI4QlwI-BaS4E5hhcEnIyXUAKq4NLSrumHfl_dQxCk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wb3N0/ZXJ3YS5jb20vY2Ru/L3Nob3AvZmlsZXMv/U1VDQ0VTU0lPTjJf/ZjVkZDEyNjctMjcx/Ny00ZWZlLTk0NWIt/ODg4YWY0YjNlMjU1/LmpwZz92PTE3MTQ1/NDM0NjEmd2lkdGg9/MTQ0NQ)" alt="Succession TV Show" width="600"/>
+  <p><em>Demo dataset based on HBO's Succession TV series</em></p>
+</div>
+
+This project uses text data about **HBO's Succession**, an Emmy Award-winning drama series created by Jesse Armstrong. The dataset includes:
+
+- **Series Overview**: Plot summary and premise
+- **Cast Information**: Details about main characters and actors
+- **Production Details**: Creator, studio, and broadcast information
+- **Critical Reception**: Awards and accolades
+- **Character Descriptions**: Information about the Roy family members
+
+### Example Queries You Can Try
+
+```python
+# Query about the plot
+"What is Succession about and who created it?"
+
+# Query about characters
+"Tell me about Logan Roy and his children"
+
+# Query about production
+"Which studio produced Succession and when did it air?"
+
+# Query about awards
+"What awards did Succession win?"
+```
+
 ## 📁 Project Structure
 
 ```
@@ -93,7 +126,9 @@ FAISS calculates similarity using distance metrics. **Lower distance = Higher si
 ├── embeddings.py              # Script for generating embeddings
 ├── retreive_embeddings.py     # Utility to load and inspect embeddings
 ├── embeddings.npy             # Pre-computed text embeddings
-└── texts.json                 # Source text data
+├── texts.json                 # Source text data (Succession info)
+└── assets/                    # Images and media
+    └── succession-poster.jpg  # TV show poster
 ```
 
 ## 🚀 Getting Started
@@ -117,6 +152,15 @@ cd Retreival-Semantic-Search-using-FAISS
 2. Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+3. **(Optional)** Add the Succession poster image:
+```bash
+# Create assets folder
+mkdir assets
+
+# Download and add succession-poster.jpg to the assets folder
+# Or use any image URL in the README
 ```
 
 ## 💻 Usage
@@ -251,6 +295,7 @@ for idex in indexes[0]:
 - **Content Discovery**: Find related articles, posts, or documents
 - **Duplicate Detection**: Identify similar or duplicate content
 - **Chatbot Context Retrieval**: Fetch relevant information for conversational AI
+- **Media Database Search**: Search through TV shows, movies, or entertainment content
 
 ## 🔧 Customization
 
@@ -281,6 +326,8 @@ model = SentenceTransformer('all-mpnet-base-v2')
 
 ### Adding Your Own Data
 
+Want to use your own dataset instead of Succession data?
+
 1. Update `texts.json` with your text corpus:
 ```json
 [
@@ -300,6 +347,14 @@ python embeddings.py
 python main.py
 ```
 
+**Ideas for Other Datasets:**
+- Movie scripts or reviews
+- Product descriptions for e-commerce
+- Research paper abstracts
+- News articles
+- Customer support FAQs
+- Book summaries
+
 ### Switching to GPU
 
 If you have a CUDA-enabled GPU for faster processing:
@@ -314,6 +369,7 @@ pip install faiss-gpu
 - **Embedding Dimension**: 384 (all-MiniLM-L6-v2)
 - **Search Complexity**: O(n) for flat index
 - **Embedding Model Size**: ~80MB
+- **Dataset Size**: 23 text passages about Succession
 
 ### Optimization Tips
 
@@ -394,6 +450,7 @@ Contributions are welcome! Feel free to:
 - Suggest new features
 - Submit pull requests
 - Improve documentation
+- Add more diverse datasets
 
 ## 📝 License
 
@@ -403,7 +460,8 @@ This project is open source and available under the MIT License.
 
 - [FAISS](https://github.com/facebookresearch/faiss) by Meta AI Research
 - [Sentence Transformers](https://www.sbert.net/) by UKP Lab
-- Example dataset based on Succession TV series information from Britannica
+- Dataset information sourced from Britannica's Succession article
+- HBO's Succession TV series for providing an excellent demo dataset
 
 ## 📚 Further Reading
 
