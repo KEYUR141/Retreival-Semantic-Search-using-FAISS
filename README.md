@@ -1,7 +1,6 @@
-# 🔍 Retrieval Semantic Search using FAISS
+## 🔍 Retrieval Semantic Search using FAISS
 
 A high-performance semantic search implementation using **FAISS** (Facebook AI Similarity Search) and **Sentence Transformers** to enable efficient similarity-based text retrieval.
-
 
 ## 📖 Overview
 
@@ -126,9 +125,7 @@ This project uses text data about **HBO's Succession**, an Emmy Award-winning dr
 ├── embeddings.py              # Script for generating embeddings
 ├── retreive_embeddings.py     # Utility to load and inspect embeddings
 ├── embeddings.npy             # Pre-computed text embeddings
-├── texts.json                 # Source text data (Succession info)
-└── assets/                    # Images and media
-    └── succession-poster.jpg  # TV show poster
+└── texts.json                 # Source text data (Succession info)
 ```
 
 ## 🚀 Getting Started
@@ -152,15 +149,6 @@ cd Retreival-Semantic-Search-using-FAISS
 2. Install dependencies:
 ```bash
 pip install -r requirements.txt
-```
-
-3. **(Optional)** Add the Succession poster image:
-```bash
-# Create assets folder
-mkdir assets
-
-# Download and add succession-poster.jpg to the assets folder
-# Or use any image URL in the README
 ```
 
 ## 💻 Usage
